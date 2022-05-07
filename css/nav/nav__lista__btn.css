@@ -1,0 +1,10 @@
+.nav__lista__btn {
+	background-color: transparent;
+	border: 1px solid #2a7ae4;
+	color: #2a7ae4;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	height: 40px;
+	width: 166px;
+}
