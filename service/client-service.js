@@ -8,7 +8,7 @@ const obtenerProductos = () => {
 
 function obtenerCertificados() {
 	return fetch(
-		"http://localhost:3000/productos"
+		"http://localhost:3000/perfil"
 	).then((res) => res.json());
 }
 
@@ -26,7 +26,7 @@ const viewProductBtn = document.querySelectorAll(".products__detail");
 viewProductBtn.forEach((btn) => {
 	btn.addEventListener("click", (e) => {
 		e.preventDefault();
-		const productId = e.target.id;
+		const Id = e.target.id;
 		window.location.href = `detail.html?id=${Id}`;
 	});
 });
