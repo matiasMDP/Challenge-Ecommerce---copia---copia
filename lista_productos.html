@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- page icon -->
+        <link rel="shortcut icon" href="assets/images/page-icon.png" type="image/x-icon" />
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap" rel="stylesheet" />
+        <!-- css -->
+        <link rel="stylesheet" href="css/general.css" />
+        <link rel="stylesheet" href="css/nav.css" />
+        <link rel="stylesheet" href="css/nav/nav-logo.css" />
+        <link rel="stylesheet" href="css/nav/nav-login-btn.css" />
+        <link rel="stylesheet" href="css/nav/nav-icon-search.css" />
+        <link rel="stylesheet" href="css/nav/nav-search.css" />
+        <link rel="stylesheet" href="css/nav/nav-search-input.css" />
+        <link rel="stylesheet" href="css/nav/nav-search-btn.css" />
+        <link rel="stylesheet" href="css/nav/nav-input-hide.css" />
+        <link rel="stylesheet" href="css/hide.css" />
+        <link rel="stylesheet" href="css/all-products.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-info.css" />
+         <link rel="stylesheet" href="css/all-products/all-products-title.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-addbtn.css" />
+         <link rel="stylesheet" href="css/all-products/all-products-items.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-item.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-img.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-detele-icon.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-edit-icon.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-item-name..css" />
+        <link rel="stylesheet" href="css/all-products/all-products-item-price.css" />
+        <link rel="stylesheet" href="css/all-products/all-products-item-id.css" />
+
+     <link rel="stylesheet" href="css/about.css" />
+     <link rel="stylesheet" href="css/error-msj.css" />
+     <link rel="stylesheet" href="css/about/about-text.css" />
+     <link rel="stylesheet" href="css/about/about-logo.css" />
+     <link rel="stylesheet" href="css/about/about-link.css" />
+     <link rel="stylesheet" href="css/about/about-contact.css" />
+     <link rel="stylesheet" href="css/about/about-contact-title.css" />
+     <link rel="stylesheet" href="css/about/about-contact-form.css" />
+     <link rel="stylesheet" href="css/about/about-contact-form-name.css" />
+     <link rel="stylesheet" href="css/about/about-contact-form-message.css" />
+     <link rel="stylesheet" href="css/about/about-contact-form-btn.css" />
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" href="css/tables.css" />
+        <link rel="stylesheet" href="css/modal.css" />
+
+
+
+        <title>Alura Geek E-Commerce</title>
+    </head>
+    <body>
+        <!-- navbar -->
+        <header class="nav__container">
+        <a href="index.html">
+            <img src="assets/images/Logo.svg" alt="alura geek Logo" class="nav__icon__logo" />
+        </a>
+        <a href="login.html" class="nav__login__btn"><button id="nav-login-btn" class="nav__login__btn"></button></a>
+
+        <div class="nav__search input--hide">
+            <input type="search" name="search" id="search" class="nav__search__input"
+                placeholder="¿Que deseas buscar?" />
+            <button class="nav__search__btn">
+                <img src="assets/images/search-icon.svg" alt="buscar" />
+            </button>
+        </div>
+        <label for="search"><img src="assets/images/search-icon.svg" alt="icono busqueda"
+                class="nav__icon__search" /></label>
+        </header>
+        <main class="productos-container">
+            <table class="table">
+                 <thead>
+                     <tr>
+                    <th class="table__column--p">Nombre</th>
+                    <th class="table__column--g">precio</th>
+                    <th class="table__column--s">descripcion</th>
+                    <th class="table__column--h">id</th>
+                    <th class="table__column--m table__align--right">
+                    <a href="./add-products.html" class="simple-button simple-button--add">Nuevoproducto</a></th>
+                    </tr>
+                </thead>
+                <tbody data-table></tbody>
+            </table>
+            <div class="modal-container modal--close">
+                <article class="modal">
+                    <h2 class="modal__title">Eliminar</h2>
+                    <button class="modal__close">X</button>
+                    <p class="modal__text">¿Deseas continuar?</p>
+                    <div class="modal__button-container">
+                         <button class="modal__button modal__button--confirm">Eliminar</button>
+                         <button class="modal__button">No eliminar</button>
+                    </div>
+                </article>
+            </div>
+        </main>
+        <script type="module" src="./controllers/producto.controller.js"></script>
+
+        <script type="module" src="./service/producto-service.js"></script>
+        <script type="module" src="./controllers/all-products.js"></script>
+        <script type="module" src="./app.js"></script>
+
+    </body>
+
+</html>
